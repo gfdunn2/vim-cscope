@@ -24,6 +24,7 @@ function! s:cscope_mappings(prefix, cscope_command)
   exec "nnoremap \<silent> ".a:prefix."f :".a:cscope_command." find f \<C-R>=expand(\"<cfile>\")\<CR>\<CR>"
   exec "nnoremap \<silent> ".a:prefix."i :".a:cscope_command." find i ^\<C-R>=expand(\"<cfile>\")\<CR>$\<CR>"
   exec "nnoremap \<silent> ".a:prefix."d :".a:cscope_command." find d \<C-R>=expand(\"<cword>\")\<CR>\<CR>"
+  exec "nnoremap \<silent> ".a:prefix."a :".a:cscope_command." find a \<C-R>=expand(\"<cword>\")\<CR>\<CR>"
 endfunction
 
 function! cscope#mappings(prefix, ...)
